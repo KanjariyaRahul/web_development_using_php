@@ -29,6 +29,7 @@ Comparison, logical, Ternary, string.
 
 **▪ Loops:** while, do-while, for, foreach, Break, continue
 
+---------
 ### Unit-2 Functions and Object-Oriented PHP
 ---------
 **▪ Functions:** intro, calling function, defining function, returning values from UDF, variable scope,
@@ -48,6 +49,7 @@ argument function.
 methods – mutator, accessor, constructor, destructor, copying objects, displaying objects,
 extending classes
 
+------------
 ### Unit-3 JavaScript and JSON
 ------------
 **▪ JavaScript:** a brief history, Advantages, comments, hiding javascript from older browsers, using
@@ -63,6 +65,7 @@ field, date validation, (use of basic regular expressions).
 
 **▪ JSON:** Overview, uses, syntax, datatypes
 
+---------------
 ### Unit-4 Forms and MySQL
 ------------------
 
@@ -74,6 +77,7 @@ hidden fields, redirecting user, Working with file uploads
 **▪ Functions:** string, date & time, formatting date & time, date arithmetic, special date-time
 functions.
 
+-------------------
 ### Unit-5 Cookies, Files and Directories with PHP and MySQL
 ------------------------
 **▪ PHP & MySQL Interaction:** database support in php, using mysqli library, connecting database,
