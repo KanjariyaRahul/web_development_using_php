@@ -11,6 +11,10 @@ echo "<table border=1>";
         {
             echo '<td>'.$letter.'</td>';
             $letter++;
+        if($letter=='AA')
+        {
+            break;
+        }
             
         }
         else
