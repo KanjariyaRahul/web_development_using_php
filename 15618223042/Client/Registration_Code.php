@@ -12,13 +12,38 @@
   $gender = $_POST ['gender'];
 
 
-  echo "$gender";
+
   $connection = mysqli_connect("localhost", "root","" ,"15618223042");
 
-  $query = mysqli_query("INSERT INTO registration
+  $query =  " INSERT INTO registration
                         (`first_name`, `middle_name`, `last_name`, `email`, `mobil_no`, `password`, `city`, `state`, `country`, `education`, `gender`) 
-                        VALUES ('$firstname', '$middlename', '$lastname', '$email', '$mobile_no', '$password', '$city', '$state', '$country','$education', '$gender')");
+                        VALUES ('$firstname', '$middlename', '$lastname', '$email', '$mobile_no', '$password', '$city', '$state', '$country','$education', '$gender')";
 
- $execute = mysqli_query($connection,$query);
+//  $execute = mysqli_query($connection,$query);
+// if (mysqli_query($connection,$query)) {
+//   echo '
+//      <div class="container">
+//       <div class="page-header">
+//           <h3>Registration Complete</h3>
+//       </div>
+//      </div>';
+     
+    
+//   header( 'Location: demo.php'  );
+
+// } else {
+//   echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+// }
+if (mysqli_query($connection, $query)) {
+  echo "New record Inserted successfully....";
+  
+} else {
+  echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+}
+
+
+mysqli_close($connection);
+
+
 
 ?>
