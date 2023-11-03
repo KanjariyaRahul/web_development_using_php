@@ -26,19 +26,26 @@
 //       <div class="page-header">
 //           <h3>Registration Complete</h3>
 //       </div>
-//      </div>';
-     
-    
+//      </div>'; 
 //   header( 'Location: demo.php'  );
 
 // } else {
 //   echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 // }
 if (mysqli_query($connection, $query)) {
-  echo "New record Inserted successfully....";
+
+  
+  function function_alert($message) { 
+    
+    
+    echo "<script>alert('$message');</script>"; 
+  } 
+  function_alert("Record Inserted .....!");
+  
+  header("Location: Registration_Design.php");
   
 } else {
-  echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+  echo "Error: ". mysqli_error($connection);
 }
 
 
