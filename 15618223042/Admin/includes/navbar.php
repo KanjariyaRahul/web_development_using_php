@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -76,14 +77,33 @@
 
         <!-- Topbar -->
         <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">         
-          <h3 class="text-dark mb-1">Title</h3>
+        <h3 class="text-dark mb-1">
+          <?php
+          $a = $_SERVER["PHP_SELF"];
+          //  echo $_SERVER["PHP_SELF"]; 
+          if ($a == "/15618223042/Admin/index.php") {
+              echo "Dashboard";
+          } else if ($a == "/15618223042/Admin/add_product.php") {
+              echo "Add Product";
+          } else if ($a == "/15618223042/Admin/update_product .php") {
+              echo "Update Product";
+          } else if ($a == "/15618223042/Admin/delete_product_design.php") {
+              echo "Delete Product";
+          } else if ($a == "/15618223042/Admin/user_management.php") {
+              echo "User Management";
+          } else if ($a == "/15618223042/Admin/category_management.php") {
+              echo "Category Management";
+          } else {
+              echo $a;
+          }
+          ?></h3>
           <ul class="navbar-nav ml-auto">
             <div class="topbar-divider d-none d-sm-block"></div>
             <!-- Nav Item - User Information -->
             <li class="nav-item dropdown no-arrow">
               <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">    
-               ADMIN   
+               Admin  
                 </span>
                 <img class="img-profile rounded-circle" src="">
               </a>
