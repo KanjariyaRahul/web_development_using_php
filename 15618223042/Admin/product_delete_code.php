@@ -21,12 +21,12 @@
 
         echo "<script class=alert alert-success>alert('Product Deleted Successfully.....!');</script>";
         // echo"<div class=alert alert-success role=alert> This is a success alert—check it out!</div>";
-        echo "<script>window.location= './delete_product.php'</script>";
+        echo "<script>window.location= './delete_product_design.php'</script>";
     }
     else
     {
         echo "<script>alert('Falied To Product Deleted......... !');</script>";
-        echo "<script>window.location= './delete_product.php'</script>";
+        echo "<script>window.location= './delete_product_design.php'</script>";
     }
     
 ?>
