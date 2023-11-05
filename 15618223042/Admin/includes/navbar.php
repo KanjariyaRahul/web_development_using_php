@@ -44,7 +44,7 @@
     <span>Update Product</span></a>
 </li>
 <li class="nav-item">
-  <a class="nav-link" href="delete_product.php">
+  <a class="nav-link" href="delete_product_design.php">
     <i class="fas fa-fw fa-trash"></i>
     <span>Delete Product</span></a>
 </li>

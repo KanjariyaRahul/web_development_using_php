@@ -43,7 +43,7 @@ include('includes/navbar.php');
       </div>
     </div>
     
-    <form action=product_delete.php method=post>
+    <form action=product_delete_code.php method=post>
     <div class="table-responsive">
    <table  class= "table table-hover" style="width:auto" >
    <thead class="table-dark"> 
